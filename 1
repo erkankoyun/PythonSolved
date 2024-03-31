@@ -1,1 +1,12 @@
+def friend(x):
+    #Code
+    friend = []
+    for name in x:
+        if len(name) == 4:
+            friend.append(name)
+    return friend
 
+# Example usage
+input_names = ["Ryan", "Kieran", "Jason", "Yous"]
+output_names = friend(input_names)
+print(output_names)  # Output: ['Ryan', 'Yous']
